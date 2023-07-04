@@ -18,7 +18,7 @@ public class FileReader {
                 sb.append(bf.readLine()).append(" ");
             }
         } catch (IOException e) {
-            System.out.println(e.getMessage() + "some problems with filename/or path");
+          /*NOPE*/
         }
         ArrayList<String> list = new ArrayList<>(Arrays.asList(sb.toString().split(" ")));
 
@@ -35,7 +35,7 @@ public class FileReader {
             profile.setAge(Integer.parseInt(list.get(indexAge + 1)));
             profile.setPhone(Long.parseLong(list.get(indexOfPhone + 1)));
         } catch (NumberFormatException e) {
-            System.out.println(e.getMessage() + "Parsing trouble");
+            /*NOPE*/
         }
 
 
